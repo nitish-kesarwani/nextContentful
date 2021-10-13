@@ -19,7 +19,6 @@ export async function getStaticProps() {
 }
 
 const Home = ({blogs}) => {
-	console.log('blogs', blogs);
 	return (
 		<div>
 			<h1 className={styles.title}>
