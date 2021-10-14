@@ -1,6 +1,9 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
   reactStrictMode: true,
-  images: {
-    domains: ['images.ctfassets.net'],
-  },
+  assetPrefix: isProd ? 'https://mvhydraendpoint.azureedge.net' : '',
+  // images: {
+  //   domains: ['images.ctfassets.net'],
+  // },
 }
