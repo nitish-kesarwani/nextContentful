@@ -19,7 +19,7 @@ export async function getStaticProps() {
 }
 
 const Home = ({blogs}) => {
-	console.log('blogs', blogs)
+	console.log('blogs', blogs	)
 	return (
 		<div>
 			<h1 className={styles.title}>
@@ -58,7 +58,7 @@ const BlogCard = ({blog}) => {
 			>
 				<h3>{title}</h3>
 				<Image
-					src={`https:${image?.fields?.file?.url}`}
+					src={`https://${image?.fields?.file?.url}`}
 					alt={image?.fields?.file?.fileName}
 					width={image?.fields?.file?.details?.image?.width}
 					height={image?.fields?.file?.details?.image?.height}

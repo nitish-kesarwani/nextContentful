@@ -5,6 +5,6 @@ module.exports = {
   reactStrictMode: true,
   assetPrefix: isProd ? 'https://mvhydraendpoint.azureedge.net' : '',
   images: {
-    domains: ['images.ctfassets.net'],
+    domains: ['images.ctfassets.net','mvhydraendpoint.azureedge.net'],
   },
 }
